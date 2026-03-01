@@ -5,27 +5,39 @@ export default function AboutPage() {
   return (
     <Section className="py-12">
       <Container>
-        <h1 className="text-3xl font-semibold text-ink-900">About</h1>
+        <div className="max-w-3xl">
+          <p className="text-xs uppercase tracking-wider text-ink-700">About</p>
+          <h1 className="mt-2 text-3xl font-semibold text-ink-900">
+            Pan-American Health Systems Strategy Group
+          </h1>
 
-        <div className="mt-6 max-w-3xl space-y-5 text-ink-800">
-          <p>
-            Pan-American Health Systems Strategy Group supports modernization and long-term
-            sustainability across Caribbean and Latin American health systems. The firm focuses on
-            measurable performance improvement, operational clarity, and scalable analytics
-            frameworks designed for geographically complex and resource-constrained environments.
-          </p>
+          <div className="mt-6 space-y-5 text-ink-700">
+            <p>
+              Pan-American Health Systems Strategy Group supports modernization and long-term
+              sustainability across Caribbean and Latin American health systems. The firm focuses on
+              measurable performance improvement, operational clarity, and scalable analytics
+              frameworks designed for geographically complex and resource-constrained environments.
+            </p>
 
-          <h2 className="text-xl font-semibold text-ink-900 pt-4">Founder</h2>
-          <p>
-            Sarah Groleau is a health systems and analytics strategist with experience in analytical
-            operations, strategic leadership, and public health systems research. Her work centers on
-            hospital and system performance, rural health strategy, and pragmatic measurement systems
-            that decision-makers can use immediately.
-          </p>
+            <p>
+              PAHSS Group is built around a simple premise: performance improvement requires
+              measurement systems that decision-makers can sustain, interpret, and act on, even when
+              staffing, connectivity, and data completeness are imperfect.
+            </p>
 
-          <p className="text-sm text-ink-700">
-            Formal launch is planned for January 2027.
-          </p>
+            <div className="glass rounded-3xl p-6">
+              <p className="text-sm font-semibold text-ink-900">Our approach</p>
+              <ul className="mt-3 space-y-2 text-sm list-disc pl-5">
+                <li>Practical indicators that support decisions, not dashboards for their own sake</li>
+                <li>Operational and population health signals designed for rural and resource-constrained settings</li>
+                <li>Governance-ready reporting that supports accountability and sustainability</li>
+              </ul>
+            </div>
+
+            <p className="text-sm text-ink-700 pill inline-flex rounded-full px-3 py-1">
+              Formal launch: January 2027
+            </p>
+          </div>
         </div>
       </Container>
     </Section>

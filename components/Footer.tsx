@@ -29,8 +29,8 @@ export default function Footer() {
           <div>
             <p className="text-sm font-semibold text-ink-900">Contact</p>
             <p className="mt-3 text-sm text-ink-700">
-              Collaboration, pilots, partnerships, and speaking invitations.
-            </p>
+  For collaboration, pilots, partnerships, and institutional inquiries.
+</p>
             <p className="mt-3 text-sm">
               <Link href="/contact" className="underline text-ink-900">
                 Reach out
