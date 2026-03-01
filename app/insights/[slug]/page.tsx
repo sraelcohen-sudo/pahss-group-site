@@ -3,8 +3,14 @@ import Section from "@/components/Section";
 import { insights } from "@/content/insights";
 import { notFound } from "next/navigation";
 
-export default function InsightPostPage({ params }: { params: { slug: string } }) {
-  const post = insights.find((p) => p.slug === params.slug);
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export default async function InsightPostPage({ params }: Props) {
+  const { slug } = await params;
+
+  const post = insights.find((p) => p.slug === slug);
   if (!post) return notFound();
 
   return (
