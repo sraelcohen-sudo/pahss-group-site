@@ -8,6 +8,7 @@ import Logo from "./Logo";
 const nav = [
   { href: "/about", label: "About" },
   { href: "/focus-areas", label: "Focus Areas" },
+  { href: "/dashboard", label: "Dashboard" },
   { href: "/insights", label: "Research and Insights" },
   { href: "/contact", label: "Contact" }
 ];
@@ -48,7 +49,7 @@ export default function Header() {
               ))}
             </nav>
 
-            {/* Minimal mobile: single CTA */}
+            {/* Mobile: single CTA */}
             <div className="md:hidden">
               <Link
                 href="/contact"
@@ -58,6 +59,7 @@ export default function Header() {
               </Link>
             </div>
 
+            {/* Desktop CTA */}
             <div className="hidden md:block">
               <Link
                 href="/contact"
