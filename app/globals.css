@@ -3,4 +3,46 @@
 @tailwind utilities;
 
 html, body { height: 100%; }
-body { background: #ffffff; color: #071C2C; }
+body { background: #ffffff; color: #071C2C; }@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --ink: #071C2C;
+  --muted: #5B6772;
+  --line: #E6E9EE;
+  --card: rgba(255, 255, 255, 0.72);
+}
+
+html, body { height: 100%; }
+
+body {
+  background: radial-gradient(1200px 700px at 20% -10%, rgba(21, 166, 160, 0.10), transparent 55%),
+              radial-gradient(900px 500px at 85% 0%, rgba(11, 124, 122, 0.10), transparent 55%),
+              linear-gradient(180deg, #ffffff, #fbfcfe);
+  color: var(--ink);
+}
+
+::selection {
+  background: rgba(21, 166, 160, 0.20);
+}
+
+a { text-underline-offset: 4px; }
+
+@layer components {
+  .glass {
+    background: var(--card);
+    border: 1px solid var(--line);
+    backdrop-filter: blur(10px);
+  }
+
+  .hairline {
+    border: 1px solid var(--line);
+  }
+
+  .pill {
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,0.6);
+  }
+}
